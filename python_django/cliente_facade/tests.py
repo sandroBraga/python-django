@@ -7,5 +7,5 @@ class ClientTest(TestCase):
         Client.objects.create(name = "Teste")
 
     def test_client_create(self):
-        client_teste = Client.objects.get(name="Teste")
+        client_teste = Client.objects.get(name = "Teste")
         self.assertEqual(client_teste.get_name(), "Teste")
